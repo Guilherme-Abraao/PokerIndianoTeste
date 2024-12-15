@@ -3,8 +3,12 @@ package org.example;
 public class Jogador {
     private Carta carta1;
     private Carta carta2;
+    private String nome;
+    private int idade;
 
-    public Jogador(Carta carta1, Carta carta2) {
+    public Jogador(String nome, int idade, Carta carta1, Carta carta2) {
+        this.nome = nome;
+        this.idade = idade;
         this.carta1 = carta1;
         this.carta2 = carta2;
     }
@@ -15,6 +19,14 @@ public class Jogador {
 
     public Carta getCarta2() {
         return carta2;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
     }
 
     public boolean temPar() {
